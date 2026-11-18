@@ -1,0 +1,63 @@
+The important concepts are:
+- Schema: Defines what operations and data GraphQL supports.
+- Query: Used to retrieve data.
+- Mutation: Used to create, update, or delete data.
+- Resolver: Go function that executes the requested operation.
+
+graphql steps
+
+
+cmds
+
+mkdir graphql-go
+cd graphql-go
+
+go mod init graphql-go 					 //Here, graphql-go is the module name.
+
+go get -tool github.com/99designs/gqlgen 		//Install gqlgen
+
+go tool gqlgen init                     		//Initialize the GraphQL project
+
+
+graphql-go/
+│
+├── go.mod
+├── go.sum
+├── gqlgen.yml
+├── server.go
+│
+└── graph/
+    │
+    ├── model/
+    │   └── models_gen.go
+    │
+    └── generated.go
+    ├── resolver.go
+    ├── schema.graphqls
+    └── schema.resolvers.go
+
+
+What are these files?
+File			Purpose
+server.go		Starts the HTTP server
+schema.graphqls		Defines GraphQL operations
+resolver.go		Holds application dependencies and data
+schema.resolvers.go	Contains Go implementations
+model/			Contains generated Go models
+generated.go		Contains generated GraphQL execution code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
