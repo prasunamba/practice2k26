@@ -15,8 +15,8 @@ http://localhost:8080/
 Test 1: Create a user (Mutation)
 mutation {
   createUser(input: {
-    name: "Prasuna"
-    email: "prasuna@gmail.com"
+    name: "xxxxxxx"
+    email: "xxxx@gmail.com"
   }) {
     id
     name

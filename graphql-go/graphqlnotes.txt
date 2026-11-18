@@ -12,7 +12,7 @@ cmds
 mkdir graphql-go
 cd graphql-go
 
-go mod init graphql-go 					 //Here, graphql-go is the module name.
+go mod init graphql-go 					        //Here, graphql-go is the module name.
 
 go get -tool github.com/99designs/gqlgen 		//Install gqlgen
 
@@ -38,13 +38,13 @@ graphql-go/
 
 
 What are these files?
-File			Purpose
-server.go		Starts the HTTP server
-schema.graphqls		Defines GraphQL operations
-resolver.go		Holds application dependencies and data
-schema.resolvers.go	Contains Go implementations
-model/			Contains generated Go models
-generated.go		Contains generated GraphQL execution code
+File			        Purpose
+server.go		        Starts the HTTP server
+schema.graphqls		    Defines GraphQL operations
+resolver.go		        Holds application dependencies and data
+schema.resolvers.go	    Contains Go implementations
+model/			        Contains generated Go models
+generated.go	    	Contains generated GraphQL execution code
 
 
 
